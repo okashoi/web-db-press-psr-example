@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+
+  autoloading:
+    build: ./_dockerfiles/php
+    volumes:
+      - ./examples/autoloading:/usr/src/myapp
+    working_dir: /usr/src/myapp
+    command: bash
+
+  coding_style:
+    build: ./_dockerfiles/php
+    volumes:
+      - ./examples/coding_style:/usr/src/myapp
+    working_dir: /usr/src/myapp
+    command: bash
+
+  interface:
+    build: ./_dockerfiles/php
+    volumes:
+      - ./examples/interface:/usr/src/myapp
+    working_dir: /usr/src/myapp
+    command: bash

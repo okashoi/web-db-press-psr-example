@@ -1,8 +1,10 @@
 <?php
 
+namespace Example;
+
 class Example
 {
-    function add_two_numbers($a, $b)
+    public function addTwoNumbers($a, $b)
     {
         return $a + $b;
     }
